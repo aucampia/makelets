@@ -1,0 +1,44 @@
+= Makelet Manager
+
+* Makelets: mklts
+* Makelet: mklt
+* Makelet Manager: mkltm
+
+----
+default install destination: ~/.mkltm/
+~/.mkltm/mkltm.mk -> ~/mkltm/mkltm-x.x.x.mk
+~/.mkltm/mklts/<groupId>/<artifactId>/<version>/...
+----
+
+----
+Aim is to be POSIX compliant, but yeah, if its not then file a bug
+----
+
+----
+requirements: 
+
+* curl
+* wget
+* tar
+* sed
+* grep
+* sh
+
+----
+
+----
+
+~/.mklt/mklt-1.0.0.mk
+~/.mklt/repository/<group>/<artifact>/<version>/...
+
+----
+
+----
+curl mkltm.mk | make /dev/stdin mkltm-help
+----
+
+----
+variables: a_b_c
+targets: a-b-c
+
+----
